@@ -1,0 +1,148 @@
+@import './reset';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+h2 {
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+.container {
+  max-width: 1600px;
+  width: 100%;
+  h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    font-family: sans-serif;
+  }
+}
+
+.container {
+  background-color: rgb(208, 156, 89);
+
+  hr {
+    background-color: blue;
+    height: 2px;
+    margin: 2rem 0;
+  }
+  .main_div {
+    text-align: center;
+    line-height: 4;
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid;
+    padding: 1rem;
+    input {
+      width: 50%;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+    .profile-img-div {
+      margin: 0 auto;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
+    small {
+      text-decoration-line: underline;
+    }
+    .about-div {
+      margin: 0 auto;
+      width: 100%;
+      .follower-ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .follower-li-div {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+        }
+        li {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+        }
+      }
+      .following-ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .following-li-div {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          li {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  .cat-div {
+    margin: 0 auto;
+    width: 100%;
+    .catImage {
+      border-radius: 0;
+      width: 50%;
+    }
+  }
+  button {
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+img:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    p {
+      font-size: 1rem;
+    }
+    .main_div {
+      width: 100%;
+      border: none;
+      h3 {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      input {
+        width: 100%;
+      }
+      .profile-img-div {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+}
